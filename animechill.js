@@ -72,5 +72,3 @@ module.exports.run = async ({ api, event }) => {
 	];
 	api.sendMessage(sentenses[Math.floor(Math.random() * parseInt(sentenses.length))], event.threadID, event.messageID);
 }
-Viết cho [ ! ] TEST BOT
-Aa
