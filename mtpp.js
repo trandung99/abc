@@ -52,6 +52,14 @@ module.exports.run = async ({ api, event }) => {
             body: "Cơn mưa ngang qua mang em đi xa...",
 			attachment: fs.createReadStream("./modules/commands/mtp/1633761393.mp4")
         },
+		{
+            body: "Cầm tay anh, dưa vai anh, kề bên anh\nNơi này có anh ❣️",
+			attachment: fs.createReadStream("./modules/commands/mtp/1634979845.mp4")
+        },
+		{
+            body: "Mai này con lớn lên, mang ngàn lời ca ấm êm.\nĐem 1 tình yêu thiết tha giúp cha giang đôi tay ôm lấy vai mẹ",
+			attachment: fs.createReadStream("./modules/commands/mtp/1634981581.mp4")
+        },
 
 	];
 	api.sendMessage(sentenses[Math.floor(Math.random() * parseInt(sentenses.length))], event.threadID, event.messageID);
